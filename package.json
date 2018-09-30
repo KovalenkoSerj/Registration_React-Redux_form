@@ -1,0 +1,14 @@
+{
+  "name": "newyorktimes",
+  "version": "1.0.0",
+  "scripts": {
+    "frontend": "cd frontend && npm run start",
+    "backend": "cd backend && nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run frontend\""
+  },
+  "dependencies": {
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.4"
+  }
+}
